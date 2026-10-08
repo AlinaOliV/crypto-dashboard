@@ -37,7 +37,7 @@ const CoinChart = ({ coinid }) => {
       //   setLoading(true);
       try {
         const response = await fetch(
-          `${API_COIN_URL}/${coinid}/market_chart?vs_currency=usd&days=7`,
+          `${API_COIN_URL}/${coinid}/market_chart?vs_currency=usd&days=7`
         );
 
         const data = await response.json();
